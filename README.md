@@ -48,11 +48,6 @@ Source: [FreeCodeCamp Cats and Dogs Dataset](https://cdn.freecodecamp.org/projec
 ![accuracy_plot](images/accuracy_plot.png)  
 *Model learning curves showing convergence and stability.*
 
-### Test Set Predictions
-
-![test_predictions](images/test_predictions.png)  
-*Predicted labels with confidence percentages on unseen test images.*
-
 ---
 
 ## ⚡ How It Works
@@ -66,3 +61,28 @@ Source: [FreeCodeCamp Cats and Dogs Dataset](https://cdn.freecodecamp.org/projec
              epochs=50,
              callbacks=[EarlyStopping, ReduceLROnPlateau])
 4. **Evaluation & Visualization:** Plot training curves, predict on test images, and visualize results.
+
+---
+
+## 💡 Results
+
+  - **Typical accuracy on test set:** >70%
+  - **Prediction confidence:** Shown as percentages for each image
+  - The model generalizes well due to augmentation and robust architecture.
+
+---
+
+## 🚀 Future Improvements
+
+  - Integrate Transfer Learning (EfficientNet, MobileNet) for higher accuracy (~85–90%).
+  - Expand dataset with more diverse images.
+  - Hyperparameter tuning: batch size, learning rate, optimizer.
+  - Create a web app interface for real-time predictions.
+
+---
+
+## 🛠 Tech Stack
+
+  - Python 3.10+
+  - TensorFlow 2.x / Keras
+  - Matplotlib / NumPy
